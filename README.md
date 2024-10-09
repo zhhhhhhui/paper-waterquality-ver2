@@ -43,7 +43,7 @@ watequality-assessing-main/
 
 │ &nbsp; &nbsp;├── Xishuang lake
 
-│ &nbsp; &nbsp;└── finally_process.npy
+│ &nbsp; &nbsp;└── process_data.npy
 
 ├── exp/
 
@@ -102,7 +102,9 @@ The folders contain files for reading data:
 - **preprocess.py**: Other data preprocessing operations.
 
 **datasets/**
-This folder contains complete HSI for five water quality regions, which have undergone reflectance calibration, atmospheric correction, and geometric correction (raw files).Additionally, we have provided the data segmented using the sliding window method for training and testing (npy file). 
+Due to the large size of the HSI data (24.3 GB) and GitHub's storage limitations, the compressed dataset.zip file(5.89 GB) has been uploaded to the professional data storage platform Figshare: 
+https://doi.org/10.6084/m9.figshare.27187224
+This folder contains complete HSIs for five water quality regions, which have undergone reflectance calibration, atmospheric correction, and geometric correction (raw files) and can be accessed in specialized remote sensing software such as ENVI and ArcMap. Additionally, it includes the executable file (process_data.npy) for training and testing, which is referenced in Section 3.1.2 of the paper and segmented using the sliding window method.
 
 **exp/**
 This folder is used for executing model training, testing, and validation.
